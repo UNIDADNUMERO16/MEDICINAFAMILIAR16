@@ -84,3 +84,89 @@
   </script>
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Encuesta Clínica</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #f0f8ff; }
+    header { 
+      background-image: url('UMF16.png'); 
+      background-size: cover; 
+      background-position: center 70%; 
+      color: white; 
+      padding: 60px 20px; 
+      text-align: center; 
+      position: relative;
+      min-height: 400px; 
+    }
+    header h1, header p { text-shadow: 2px 2px 4px rgba(0,0,0,0.7); }
+    .menu-logo { position: absolute; top: 10px; right: 10px; }
+    .logo { width: 80px; cursor: pointer; }
+    .menu { display: none; position: absolute; top: 90px; right: 0; background: white; border: 1px solid #ccc; border-radius: 8px; padding: 10px; }
+    .menu a { display: block; padding: 8px; color: #333; text-decoration: none; }
+    .menu a:hover { background: #f0f0f0; }
+    .boton { padding: 15px; margin: 10px; font-size: 18px; background: #2196F3; color: white; border: none; border-radius: 8px; cursor: pointer; }
+    .boton:hover { background: #0b79d0; }
+    section { padding: 20px; text-align: center; }
+    img.croquis { max-width: 100%; height: auto; border: 2px solid #ccc; border-radius: 8px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Bienvenido a la Encuesta de UMF 16</h1>
+    <p>Tu opinión ayuda a mejora la clínica</p>
+    <div class="menu-logo">
+      <img src="logoimss.png" alt="Logo IMSS" class="logo" onclick="toggleMenu()">
+      <div id="menu" class="menu">
+        <a href="#encuestas">Encuestas</a>
+        <a href="#croquis">Croquis</a>
+        <a href="#video">Video</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Botones de encuesta -->
+  <section id="encuestas">
+    <button class="boton" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLScwSYjcvAkynTdwIwvzerkMb4a0gCnoOuQVJixkOyZPdQsg5w/viewform?embedded=true','_blank')">
+      ¿Recibió su medicamento completo?
+    </button>
+    <button class="boton" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSc8Qd_uA27Vk6iGdZae5aB3cQKkHwURrxD6ER2qEU7nSZJrNw/viewform?embedded=true','_blank')">
+      ¿La clínica estaba limpia?
+    </button>
+    <button class="boton" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLScDuhbb1u6jbot1PaXUb3ZU6ahjXT0ec3wG7d9Qgb5YggNYgw/viewform?embedded=true','_blank')">
+      ¿El trato fue adecuado?
+    </button>
+    <button class="boton" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSf70EGfUtsUjzQP4RDAJlmsFFLHoqJrnNjjVopoooRphsI3jQ/viewform?embedded=true','_blank')">
+      ¿Faltan insumos en baños?
+    </button>
+  </section>
+
+  <!-- Croquis -->
+  <section id="croquis">
+    <h2>Croquis de la Unidad</h2>
+    <img src="croquis.png" alt="Croquis de la clínica" class="croquis">
+  </section>
+
+  <!-- Video -->
+  <section id="video">
+  <h2>Video informativo</h2>
+  <video width="640" controls>
+    <source src="UMFN16.mp4" type="video/mp4">
+    Tu navegador no soporta video.
+  </video>
+</section>
+
+
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("menu");
+      menu.style.display = (menu.style.display === "block") ? "none" : "block";
+    }
+  </script>
+</body>
+</html>
+>>>>>>> 997c6af7f9636e00ab4c9cde95d6c23f1c5e2947
