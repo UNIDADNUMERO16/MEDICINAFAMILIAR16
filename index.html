@@ -2,9 +2,14 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Encuesta Clínica</title>
+  <title>Encuesta UMF 16</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; background: #f0f8ff; }
+    body { 
+      font-family: 'Segoe UI', Arial, sans-serif; 
+      margin: 0; 
+      background: #f9f9f9; 
+      color: #333;
+    }
     header { 
       background-image: url('UNIDAD.png'); /* Imagen de portada */
       background-size: cover; 
@@ -15,16 +20,65 @@
       position: relative;
       min-height: 400px; 
     }
-    header h1, header p { text-shadow: 2px 2px 4px rgba(0,0,0,0.7); }
+    header h1, header p { 
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.7); 
+    }
     .menu-logo { position: absolute; top: 10px; right: 10px; }
     .logo { width: 80px; cursor: pointer; }
-    .menu { display: none; position: absolute; top: 90px; right: 0; background: white; border: 1px solid #ccc; border-radius: 8px; padding: 10px; }
-    .menu a { display: block; padding: 8px; color: #333; text-decoration: none; }
-    .menu a:hover { background: #f0f0f0; }
-    .boton { padding: 15px; margin: 10px; font-size: 18px; background: #2196F3; color: white; border: none; border-radius: 8px; cursor: pointer; }
-    .boton:hover { background: #0b79d0; }
-    section { padding: 20px; text-align: center; }
-    img.croquis { max-width: 100%; height: auto; border: 2px solid #ccc; border-radius: 8px; }
+    .menu { 
+      display: none; 
+      position: absolute; 
+      top: 90px; right: 0; 
+      background: white; 
+      border: 1px solid #ccc; 
+      border-radius: 8px; 
+      padding: 10px; 
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    .menu a { 
+      display: block; 
+      padding: 8px; 
+      color: #006341; 
+      text-decoration: none; 
+      font-weight: 500;
+    }
+    .menu a:hover { background: #e6f2ed; }
+    .boton { 
+      padding: 15px; 
+      margin: 10px; 
+      font-size: 18px; 
+      background: #006341; 
+      color: white; 
+      border: none; 
+      border-radius: 8px; 
+      cursor: pointer; 
+      transition: background 0.3s;
+    }
+    .boton:hover { background: #004d2a; }
+    section { 
+      padding: 30px 20px; 
+      text-align: center; 
+      background: #fff; 
+      margin: 20px auto; 
+      border-radius: 10px; 
+      max-width: 900px; 
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    section h2 { 
+      color: #006341; 
+      margin-bottom: 20px; 
+    }
+    img.croquis { 
+      max-width: 100%; 
+      height: auto; 
+      border: 3px solid #006341; 
+      border-radius: 8px; 
+    }
+    video { 
+      max-width: 100%; 
+      border: 3px solid #006341; 
+      border-radius: 8px; 
+    }
   </style>
 </head>
 <body>
@@ -43,6 +97,7 @@
 
   <!-- Botones de encuesta -->
   <section id="encuestas">
+    <h2>Encuesta de satisfacción</h2>
     <button class="boton" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLScwSYjcvAkynTdwIwvzerkMb4a0gCnoOuQVJixkOyZPdQsg5w/viewform?embedded=true','_blank')">
       ¿Recibió su medicamento completo?
     </button>
@@ -60,7 +115,7 @@
   <!-- Video primero -->
   <section id="video">
     <h2>Video informativo</h2>
-    <video width="640" controls>
+    <video controls>
       <source src="UMFN16.mp4" type="video/mp4">
       Tu navegador no soporta video.
     </video>
