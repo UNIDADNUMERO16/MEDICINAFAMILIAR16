@@ -6,9 +6,9 @@
   <style>
     body { font-family: Arial, sans-serif; margin: 0; background: #f0f8ff; }
     header { 
-      background-image: url('UMF16.png'); 
+      background-image: url('UNIDAD.png'); /* Imagen de portada */
       background-size: cover; 
-      background-position: center 70%; 
+      background-position: center; 
       color: white; 
       padding: 60px 20px; 
       text-align: center; 
@@ -35,8 +35,8 @@
       <img src="logoimss.png" alt="Logo IMSS" class="logo" onclick="toggleMenu()">
       <div id="menu" class="menu">
         <a href="#encuestas">Encuestas</a>
-        <a href="#croquis">Croquis</a>
         <a href="#video">Video</a>
+        <a href="#croquis">Croquis</a>
       </div>
     </div>
   </header>
@@ -57,19 +57,19 @@
     </button>
   </section>
 
-  <!-- Croquis -->
-  <section id="croquis">
-    <h2>Croquis de la Unidad</h2>
-    <img src="croquis.png" alt="Croquis de la clínica" class="croquis">
-  </section>
-
-  <!-- Video -->
+  <!-- Video primero -->
   <section id="video">
     <h2>Video informativo</h2>
     <video width="640" controls>
       <source src="UMFN16.mp4" type="video/mp4">
       Tu navegador no soporta video.
     </video>
+  </section>
+
+  <!-- Croquis después -->
+  <section id="croquis">
+    <h2>Croquis de la Unidad</h2>
+    <img src="croquis.png" alt="Croquis de la clínica" class="croquis">
   </section>
 
   <script>
@@ -80,3 +80,4 @@
   </script>
 </body>
 </html>
+
